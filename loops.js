@@ -6,7 +6,10 @@
 // Hoera!
 // ==========================================
 
-
+const arrayHoera = ["Hoera!", "Hoera!", "Hoera!"]
+ for (let i = 0; i < arrayHoera.length; i++) {
+     console.log(arrayHoera[i]);
+ }
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de vijfde loop het woord "klaar!"
@@ -17,7 +20,10 @@
 // loop...
 // klaar!
  // ==========================================
-
+const loopKlaar = ["loop...","loop...","loop...","loop...","klaar!"]
+for (let i = 0; i < loopKlaar.length; i++) {
+    console.log(loopKlaar[i]);
+}
 
 
 // ==========================================
@@ -29,11 +35,16 @@
 // 3 is oneven
 // .... etc.
 // 15 is oneven
-
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over. Google daarom eens naar 'mdn webdocs remainder operator'.
 // ==========================================
-
-
+const digits = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+for (let i = 0; i < digits.length; i++) {
+    if ( i% 2 === 0) {
+        console.log(digits[i] + " is" + " even")
+    } else {
+        console.log(digits[i] + " is" + " uneven")
+    }
+}
 
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -50,4 +61,13 @@
 // >> 8
 // >> 9
 // ==========================================
-
+const digitize = [0,1,2,3,4,5,6,7,8,9]
+for (let i = 0; i < digitize.length; i++) {
+     if (i <= 2 ) {
+         console.log(digitize[i])
+     } if (i > 2 && i < 6) {
+            console.log('>' + ' ' + digitize[i])
+        } if (i > 6) {
+         console.log('>>' + ' ' + digitize[i])
+    }
+}
